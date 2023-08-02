@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+    .container {
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        grid-template-rows: 2fr 1fr 1fr;
+        height: 100vh;
+    }
+    
+    .header {
+        grid-column: 1 / -1;
+        background: grey;
+        color: white;
+        text-align: center;
+    }
+
+    
+    .main {
+        display: grid;
+        grid-template-columns: repeat(3fr, 1fr);
+        grid-template-rows: 2fr 1fr 1fr ;
+    }
+    
+    h2 {
+        display: grid;
+        grid-template-columns: repeat(3fr, 1fr);
+
+    }
+    .sidebar {
+        background: lightgrey;
+        padding: 10px;
+    }
+    
+    .content-1 {
+        background: lightblue;
+        padding: 10px;
+        }
+    
+    .content-2 {
+        background: lightgreen;
+        padding: 10px;
+    }
+    
+    .content-3 {
+        background: lightpink;
+        padding: 10px;
+    }
+    
+    .footer-container {
+        grid-column: 1 / -1;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 10px;
+    }
+    
+    .footer {
+        background: grey;
+        color: white;
+        text-align: center;
+        padding: 5px;
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Шапка страницы</h1>
+        </header>
+        <main class="main">
+            <h2>Основная часть</h2>
+            <section class="content-1">Еще 1</section>
+            <section class="content-2">Еще 2</section>
+            <section class="content-3">Еще 3</section>
+        </main>
+        <aside class="sidebar">Боковая часть</aside>
+        <div class="footer-container">
+            <footer class="footer">
+                <p>Футер 1</p>
+            </footer>
+            <footer class="footer">
+                <p>Футер 2</p>
+            </footer>
+            <footer class="footer">
+                <p>Футер 3</p>
+            </footer>
+            <footer class="footer">
+                <p>Футер 4</p>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>
