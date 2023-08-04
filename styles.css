@@ -48,15 +48,9 @@ header {
     line-height: normal;
     letter-spacing: -0.36px;
 }
-.grid-container {
-display: grid;
-grid-template-columns: 1fr 1fr 1fr; 
-grid-template-rows: 1fr 2fr; 
-gap: 10px; 
-margin: 274px 776px 466px 56px;
-width: 608px;
-height: 160px;
-
+.container {
+    display: grid;
+    gap: 24px;
 }
 .title {
     color: var(--black, #303031);
@@ -66,13 +60,16 @@ height: 160px;
     font-weight: 400;
     line-height: 80px; /* 125% */
     font-family: 'BelyDisplay', cursive;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 2fr; 
+    gap: 10px; 
+    width: 608px;
+    height: 160px;
 }
 .description {
-    margin: 458px 776px 378px 56px;
     width: 608px;
     height: 64px;
-}
-.text {
     color: var(--gray, #66645E);
     font-family: 'Inter', sans-serif;
     font-size: 24px;
@@ -80,5 +77,92 @@ height: 160px;
     font-weight: 400;
     line-height: 32px; /* 133.333% */
     letter-spacing: -0.48px;
+}
+.button2 {
+    display: inline-flex;
+padding: 20px 24px;
+align-items: center;
+border-radius: 8px;
+background: #71A894;
+width: 219px;
+height: 64px;
+}
+.my-button {
+    color: var(--white, #FFF);
+font-family: Proxima Nova;
+font-size: 18px;
+font-style: normal;
+font-weight: 700;
+line-height: 24px; /* 133.333% */
+width: 171px;
+height: 24px;
+}
 
+
+.content {
+    position: relative;
+    display: grid;
+    grid-template-columns: 671px 1fr; /* Swap the column order */
+    justify-items: center;
+    align-items: center;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.image-container {
+    position: relative;
+    width: 671px;
+    height: 720px;
+    overflow: hidden; /* Обрезаем изображение за пределами контейнера */
+}
+
+.Illustration {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    flex-shrink: 0;
+    fill: var(--light-gold, #F3F0EA);
+    z-index: 1;
+}
+
+.image-container img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 2;
+}
+.svg-container {
+    width: 18px;
+height: 32px;
+color: #303031;
+
+}
+.scroll {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    width: 720px;
+height: 900px;
+flex-shrink: 0;
+}
+
+.text {
+    color: var(--gray, #66645E);
+text-align: center;
+font-family: Inter;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: -0.28px;
+width: 75px;
+height: 17px;
 }
