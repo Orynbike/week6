@@ -19,7 +19,7 @@ header {
 }
 .logo {
     color: var(--black, #303031);
-    font-family: 'Futura Round Demi', sans-serif;;
+    font-family: 'Futura Round Demi', sans-serif;
     font-size: 32px;
     font-style: normal;
     font-weight: 500;
@@ -80,25 +80,23 @@ header {
 }
 .button2 {
     display: inline-flex;
-padding: 20px 24px;
-align-items: center;
-border-radius: 8px;
-background: #71A894;
-width: 219px;
-height: 64px;
+    padding: 20px 24px;
+    align-items: center;
+    border-radius: 8px;
+    background: #71A894;
+    width: 219px;
+    height: 64px;
 }
 .my-button {
     color: var(--white, #FFF);
-font-family: Proxima Nova;
-font-size: 18px;
-font-style: normal;
-font-weight: 700;
-line-height: 24px; /* 133.333% */
-width: 171px;
-height: 24px;
+    font-family: Proxima Nova;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px; /* 133.333% */
+    width: 171px;
+    height: 24px;
 }
-
-
 .content {
     position: relative;
     display: grid;
@@ -126,6 +124,9 @@ height: 24px;
     flex-shrink: 0;
     fill: var(--light-gold, #F3F0EA);
     z-index: 1;
+    width: 1012px;
+height: 569.578px;
+flex-shrink: 0;
 }
 
 .image-container img {
@@ -139,8 +140,8 @@ height: 24px;
 }
 .svg-container {
     width: 18px;
-height: 32px;
-color: #303031;
+    height: 32px;
+    color: #303031;
 
 }
 .scroll {

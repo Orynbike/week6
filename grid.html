@@ -36,24 +36,29 @@
         padding: 10px;
     }
     
-    .content-1 {
-        background: lightblue;
-        padding: 10px;
-        }
-    
-    .content-2 {
-        background: lightgreen;
-        padding: 10px;
-    }
-    
-    .content-3 {
-        background: lightpink;
-        padding: 10px;
-    }
-    .column {
-        display: flex;
-        flex-direction: column
-    }
+    .grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Два столбца равной ширины */
+    grid-gap: 10px; /* Промежуток между элементами */
+}
+
+.content-1, .content-2, .content-3 {
+    padding: 10px;
+}
+
+.content-1 {
+    background: lightblue;
+}
+
+.content-2 {
+    background: lightgreen;
+}
+
+.content-3 {
+    background: lightpink;
+    grid-column: 1 / span 2; /* Расположение контента 3 на двух столбцах */
+}
+
     .footer-container {
         grid-column: 1 / -1;
         display: grid;
@@ -76,12 +81,9 @@
         </header>
         <main class="main">
             <h2>Основная часть</h2>
-            <div class="content">
+            <div class="grid-container">
                 <div class="content-1">Еще 1</div>
                 <div class="content-2">Еще 2</div>
-            </div>
-            <div class="column">
-                <div class="content"></div>
                 <div class="content-3">Еще 3</div>
             </div>
         </main>
