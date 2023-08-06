@@ -116,7 +116,6 @@ header {
 }
 
 .Illustration {
-    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
@@ -127,10 +126,13 @@ header {
     width: 1012px;
 height: 569.578px;
 flex-shrink: 0;
+
 }
 
 .image-container img {
-    position: absolute;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 40px 0px 320px 0px;
     top: 0;
     left: 0;
     width: 100%;
